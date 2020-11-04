@@ -1,4 +1,5 @@
 import React from 'react';
+import Feature from "./Feature";
 
 const featureNames = [
   'Первое целевое преимущество',
@@ -20,12 +21,7 @@ const Features = () => (
         <div className="features-slider">
           <div className="features-slider_items">
             {featureNames.map((feature, ind) =>
-              (
-                <div key={ind} className="features-slider_item">
-                  <div className="features-img" style={{ backgroundImage: `url(./images/${ind + 1}.svg)` }} />
-                  <div className="features-feature">{feature}</div>
-                </div>
-              )
+                <Feature key={ind} feature={feature} ind={ind}/>
             )}
           </div>
           <button className="features-slider-arrow features-slider-prev">

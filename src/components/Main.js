@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from "./Button";
 
 const Main = () => (
   <main>
@@ -8,7 +9,7 @@ const Main = () => (
         <div className="main-small">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику,
           вебмастеру сгенерировать несколько абзацев более.
         </div>
-        <button className="btn main-btn"><span>Подробнее</span></button>
+        <Button text='Подробнее' sectionName='main'/>
       </div>
     </div>
   </main>

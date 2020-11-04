@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from "./Button";
 
 const Contact = () => (
   <section className="contact">
@@ -10,9 +11,7 @@ const Contact = () => (
           <input type="text" placeholder="Ваше имя"/>
           <input type="tel" placeholder="Телефон"/>
           <input type="email" placeholder="E-mail"/>
-          <button className="btn contact-btn">
-            <span>Позвоните мне</span>
-          </button>
+          <Button text='Позвоните мне' sectionName='contact'/>
         </form>
         <div className="contact-personal">Я даю своё <a href="/">согласие</a> на обработку моих персональных данных.
         </div>
